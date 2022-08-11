@@ -1,0 +1,39 @@
+{
+  "name": "outl1ne/nova-trumbowyg-field",
+  "description": "A Trumbowyg WYSIWYG field for Laravel Nova.",
+  "keywords": [
+    "laravel",
+    "nova",
+    "link",
+    "field",
+    "outl1ne"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "laravel/nova": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Outl1ne\\NovaTrumbowygField\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Outl1ne\\NovaTrumbowygField\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://nova.laravel.com"
+    }
+  ]
+}
