@@ -40,4 +40,4 @@ public function fields(Request $request) {
 
 ## License
 
-Nova Link Field is open-sourced software licensed under the [MIT license](LICENSE.md).
+Nova Trumbowyg Field is open-sourced software licensed under the [MIT license](LICENSE.md).
