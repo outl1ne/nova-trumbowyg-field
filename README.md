@@ -18,6 +18,12 @@ Install the package in to a Laravel app that uses [Nova](https://nova.laravel.co
 composer require outl1ne/nova-trumbowyg-field
 ```
 
+Publish icons SVG:
+
+```bash
+php artisan vendor:publish --provider="Outl1ne\NovaTrumbowygField\FieldServiceProvider" --tag=public
+```
+
 ## Usage
 
 ```php
