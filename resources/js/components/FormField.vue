@@ -1,5 +1,5 @@
 <template>
-  <DefaultField :field="field" :errors="errors" :show-help-text="showHelpText">
+  <DefaultField :field="currentField" :errors="errors" :show-help-text="showHelpText">
     <template #field>
       <div :class="[errorClasses, errorClasses.length ? 'o1-border' : '']" @keydown.stop>
         <Trumbowyg v-model="value" :config="field.options" />
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import { FormField, HandlesValidationErrors } from 'laravel-nova';
+import { DependentFormField, HandlesValidationErrors } from 'laravel-nova';
 import Trumbowyg from 'vue-trumbowyg';
 import 'trumbowyg/dist/ui/trumbowyg.css';
 
 export default {
-  mixins: [FormField, HandlesValidationErrors],
+  mixins: [HandlesValidationErrors, DependentFormField],
 
   props: ['resourceName', 'resourceId', 'field'],
 

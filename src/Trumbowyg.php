@@ -4,10 +4,11 @@ namespace Outl1ne\NovaTrumbowygField;
 
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\Expandable;
+use Laravel\Nova\Fields\SupportsDependentFields;
 
 class Trumbowyg extends Field
 {
-    use Expandable;
+    use Expandable, SupportsDependentFields;
 
     public $component = 'o1-trumbowyg-field';
     public $fullWidth = true;
