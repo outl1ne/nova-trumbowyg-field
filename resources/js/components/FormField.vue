@@ -1,7 +1,7 @@
 <template>
   <DefaultField :field="currentField" :errors="errors" :show-help-text="showHelpText">
     <template #field>
-      <div :class="[errorClasses, errorClasses.length ? 'o1-border' : '']" @keydown.stop>
+      <div :class="[errorClasses, errorClasses.length ? 'o1-border' : '', 'o1-mb-4']" @keydown.stop>
         <Trumbowyg v-model="value" :config="field.options" />
       </div>
 
