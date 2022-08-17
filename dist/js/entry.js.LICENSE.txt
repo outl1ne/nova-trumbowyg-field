@@ -39,7 +39,7 @@
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
 /**
- * Trumbowyg v2.25.1 - A lightweight WYSIWYG editor
+ * Trumbowyg v2.25.2 - A lightweight WYSIWYG editor
  * Trumbowyg core file
  * ------------------------
  * @link http://alex-d.github.io/Trumbowyg
