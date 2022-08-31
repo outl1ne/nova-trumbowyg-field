@@ -15,7 +15,6 @@
 <script>
 import { DependentFormField, HandlesValidationErrors } from 'laravel-nova';
 import Trumbowyg from 'vue-trumbowyg';
-import 'trumbowyg/dist/ui/trumbowyg.css';
 
 export default {
   mixins: [HandlesValidationErrors, DependentFormField],
@@ -39,3 +38,18 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.trumbowyg-dark .trumbowyg-editor {
+  background: #1a1a1a !important;
+  color: #f4f7fa !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  blockquote {
+    color: #f4f7fa !important;
+  }
+}
+</style>
