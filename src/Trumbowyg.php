@@ -13,15 +13,23 @@ class Trumbowyg extends Field
     public $component = 'o1-trumbowyg-field';
     public $fullWidth = true;
 
+    protected $defaultOptions = [
+        'resetCss' => true,
+        'removeformatPasted' => true,
+    ];
+
     public function __construct($name, $attribute = null, callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
         $this->hideFromIndex();
+
+        // Default options
+        $this->options($this->defaultOptions);
     }
 
     public function options(array $options = [])
     {
-        return $this->withMeta(['options' => $options]);
+        return $this->withMeta(['options' => array_merge($this->defaultOptions, $options)]);
     }
 
     public function jsonSerialize(): array
