@@ -18,7 +18,7 @@ class Trumbowyg extends Field
         'removeformatPasted' => true,
     ];
 
-    public function __construct($name, $attribute = null, callable $resolveCallback = null)
+    public function __construct($name, $attribute = null, ?callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
         $this->hideFromIndex();

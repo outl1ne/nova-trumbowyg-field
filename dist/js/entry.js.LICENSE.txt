@@ -1,11 +1,4 @@
 /*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <http://feross.org>
- * @license  MIT
- */
-
-/*!
  * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
  *
@@ -16,16 +9,8 @@
  * Date: 2023-08-28T13:37Z
  */
 
-/*!
- * vuex v4.1.0
- * (c) 2022 Evan You
- * @license MIT
- */
-
-/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
 /**
- * Trumbowyg v2.27.3 - A lightweight WYSIWYG editor
+ * Trumbowyg v2.31.0 - A lightweight WYSIWYG editor
  * Trumbowyg core file
  * ------------------------
  * @link https://alex-d.github.io/Trumbowyg/
